@@ -14,19 +14,20 @@
             <div class="row">
               <div class="col s12">
                 <div class="input-field">
-                  <asp:TextBox ID="txtEmail" TextMode="Email" runat="server" MaxLength="254" placeholder="Email"></asp:TextBox>
+                  <asp:TextBox ID="txtEmail" TextMode="Email" runat="server" MaxLength="254" placeholder="Email" required="required"></asp:TextBox>
                 </div>
               </div>
 
               <div class="col s12">
                 <div class="input-field">
-                  <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" placeholder="Password"></asp:TextBox>
+                  <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" placeholder="Password" required="required"></asp:TextBox>
+                  <span class="helper-text">Almeno 8 caratteri</span>
                 </div>
               </div>
 
               <div class="col s12">
                 <div class="input-field">
-                  <asp:TextBox ID="txtConfirmPassword" TextMode="Password" runat="server" placeholder="Conferma password"></asp:TextBox>
+                  <asp:TextBox ID="txtConfirmPassword" TextMode="Password" runat="server" placeholder="Conferma password" required="required"></asp:TextBox>
                 </div>
               </div>
             </div>
@@ -34,6 +35,7 @@
 
           <div class="card-action">
             <asp:Button ID="btnRegister" runat="server" Text="Registrati" CssClass="btn green"/>
+            <a href="/Account/Login" class="btn-flat green-text">Login</a>
           </div>
       </div>
     </form>

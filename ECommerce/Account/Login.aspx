@@ -9,7 +9,7 @@
     <form runat="server">
       <div class="card">
           <div class="card-content">
-            <span class="card-title"><b>Registrazione</b></span>
+            <span class="card-title"><b>Login</b></span>
 
             <div class="row">
               <div class="col s12">
@@ -28,6 +28,7 @@
 
           <div class="card-action">
             <asp:Button ID="btnLogin" runat="server" Text="Entra" CssClass="btn green"/>
+            <a href="/Account/Registration" class="btn-flat green-text">Registrati</a>
           </div>
       </div>
     </form>
