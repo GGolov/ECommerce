@@ -1,2 +1,21 @@
-﻿body {
+﻿html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#logo-img {
+    margin-top: 0.45vh;
+}
+
+#sidenav-logo {
+    padding: 0.6em 0 0.6em 0;
 }

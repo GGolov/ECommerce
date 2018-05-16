@@ -4,39 +4,45 @@
 
 <html>
 <head runat="server">
-  <title></title>
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="Content/Libraries/materialize/css/materialize.min.css" rel="stylesheet" />
-  <link href="Content/Stylesheets/index.css" rel="stylesheet" />
+  <link href="/Content/Libraries/material-icons/material-icons.css" rel="stylesheet">
+  <link href="/Content/Libraries/materialize/css/materialize.min.css" rel="stylesheet" />
+  <link href="/Content/Stylesheets/index.css" rel="stylesheet" />
 
   <asp:ContentPlaceHolder id="cphHead" runat="server">
   </asp:ContentPlaceHolder>
 </head>
 <body>
   <header>
-    <nav class="nav-wrapper teal">
-      <asp:ContentPlaceHolder id="cphHeader" runat="server">
-      </asp:ContentPlaceHolder>
-    </nav>
-  </header>
-
-  <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
+    <div class="navbar-fixed">
+      <nav>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper green">
+          <a href="/" class="brand-logo center">
+            <img src="/Content/Images/logo.svg" alt="Lyniv logo" id="logo-img"/>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/Account/Registration">Registrati</a></li>
+            <li><a href="/Account/Login">Entra</a></li>
+          </ul>
         </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+      <li id="sidenav-logo" class="green">
+        <a href="/" class="center">
+          <img src="/Content/Images/logo.svg" alt="Lyniv logo"/>
+        </a>
+      </li>
+      <li>
+
+      </li>
       <li><a href="#!">Second Link</a></li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Subheader</a></li>
       <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+  </header>
 
   <main>
     <asp:ContentPlaceHolder id="cphMain" runat="server">
@@ -44,7 +50,7 @@
     </asp:ContentPlaceHolder>
   </main>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer green">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -70,7 +76,9 @@
     </div>
   </footer>
 
-  <script src="Content/Libraries/materialize/js/materialize.min.js"></script>
-  <script src="Content/Scripts/index.js"></script>
+  <script src="/Content/Libraries/materialize/js/materialize.min.js"></script>
+  <script src="/Content/Scripts/index.js"></script>
+  <asp:ContentPlaceHolder id="cphScripts" runat="server">
+  </asp:ContentPlaceHolder>
 </body>
 </html>

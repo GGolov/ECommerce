@@ -1,0 +1,13 @@
+﻿main {
+    display: flex;
+}
+
+main .container {
+    flex: 1;
+}
+
+form {
+    margin: 0 auto;
+    width: 550px;
+    height: 60%;
+}
