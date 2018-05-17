@@ -34,7 +34,7 @@
           </div>
 
           <div class="card-action">
-            <asp:Button ID="btnRegister" runat="server" Text="Registrati" CssClass="btn green"/>
+            <asp:Button ID="btnRegister" runat="server" Text="Registrati" CssClass="btn green" OnClick="btnRegister_Click"/>
             <a href="/Account/Login" class="btn-flat green-text">Login</a>
           </div>
       </div>

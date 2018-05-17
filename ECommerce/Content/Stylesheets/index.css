@@ -23,3 +23,7 @@ main {
 a.right.green-text {
     margin: 0 !important;
 }
+
+.container-fluid {
+    width: 80%;
+}
