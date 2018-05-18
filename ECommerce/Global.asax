@@ -8,6 +8,10 @@
     {
         // Code that runs on application startup
         RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+        // Sets connectionString
+        System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/");
+        Application["connectionString"] = rootWebConfig.ConnectionStrings.ConnectionStrings["DatabaseConnectionString"];
     }
     
     void Application_End(object sender, EventArgs e) 

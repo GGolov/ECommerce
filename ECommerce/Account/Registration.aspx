@@ -12,6 +12,18 @@
             <span class="card-title"><b>Registrazione</b></span>
 
             <div class="row">
+                <div class="col s12">
+                <div class="input-field">
+                  <asp:TextBox ID="txtName" runat="server" MaxLength="50" placeholder="Name" required="required"></asp:TextBox>
+                </div>
+              </div>
+
+                <div class="col s12">
+                <div class="input-field">
+                  <asp:TextBox ID="txtSurname" runat="server" MaxLength="50" placeholder="Surname" required="required"></asp:TextBox>
+                </div>
+              </div>
+
               <div class="col s12">
                 <div class="input-field">
                   <asp:TextBox ID="txtEmail" TextMode="Email" runat="server" MaxLength="254" placeholder="Email" required="required"></asp:TextBox>
