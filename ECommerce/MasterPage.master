@@ -18,7 +18,7 @@
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <div class="nav-wrapper green">
           <a href="/" class="brand-logo center">
-            <img src="/Content/Images/logo_new.svg" alt="Lyniv logo" id="logo-img"/>
+            <img src="/Content/Images/brand_logo.svg" alt="Lyniv logo" id="logo-img"/>
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="/Account/Registration">Registrati</a></li>
@@ -31,7 +31,7 @@
     <ul id="slide-out" class="sidenav">
       <li id="sidenav-logo" class="green">
         <a href="/" class="center">
-          <img src="/Content/Images/logo_new.svg" alt="Lyniv logo"/>
+          <img src="/Content/Images/brand_logo.svg" alt="Lyniv logo"/>
         </a>
       </li>
       <li>
