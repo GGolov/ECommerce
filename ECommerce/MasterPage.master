@@ -21,6 +21,10 @@
             <img src="/Content/Images/brand_logo.svg" alt="Lyniv logo" id="logo-img"/>
           </a>
           <ul class="right hide-on-med-and-down">
+            <% if (Session["userId"] != null)
+               {%>
+                 <li><a href="/Account/Profile"><% Response.Write(Session["Email"]); %></a></li>
+            <% }%>
             <li><a href="/Account/Registration">Registrati</a></li>
             <li><a href="/Account/Login">Entra</a></li>
           </ul>

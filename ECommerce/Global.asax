@@ -10,7 +10,7 @@
       RouteConfig.RegisterRoutes(RouteTable.Routes);
 
       // Sets connectionString
-      Application["connectionString"] = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\glebg\source\WebSites\ECommerce\ECommerce\App_Data\Database.mdf;Integrated Security = True";
+      Application["connectionString"] = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\glebg\Desktop\ECommerce\ECommerce\App_Data\Database.mdf;Integrated Security=True";
     }
 
     void Application_End(object sender, EventArgs e)
